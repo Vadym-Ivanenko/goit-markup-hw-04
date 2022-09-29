@@ -147,6 +147,7 @@ body {
     padding: 0;
 }
 
+
 .header-nav-item,
 .header-contact-item {
     font-weight: 500;
@@ -175,10 +176,13 @@ body {
 
 
 .header-contact-link {
-    display: block;
+    display: flex;
+    align-items: center;
     padding: 32px 0;
+    gap: 10px;
     color: var(--third-color);
 }
+
 
 /*-------------------------------- HERO--------------------------- */
 .hero {
@@ -186,7 +190,9 @@ body {
     padding-top: 200px;
     padding-bottom: 200px;
 
-    background: var(--background);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .hero-title {
@@ -230,11 +236,23 @@ body {
     padding: 0;
 }
 
+
 .benefits-item {
     max-width: 270px;
 }
 
+.benefits-icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background-color: var(--background-first);
+    border-radius: 4px;
+}
+
 .benefits-caption {
+    margin-top: 30px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -301,6 +319,28 @@ body {
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
+}
+
+.team-social-item {
+    display: flex;
+    margin-top: 16px;
+    padding: 0 32px;
+}
+
+.team-social-list {
+    margin-right: 10px;
+}
+
+.team-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+}
+
+.team-social-list:last-child {
+    margin-right: 0;
 }
 
 /* -------------------------FOOTER -------------------------- */
