@@ -102,11 +102,9 @@ body {
 }
 
 /* ----------------------------HEADER ---------------------------------*/
-.header-wrapper {
-    margin: 0 auto;
+.header {
     background-color: var(--second-color);
     border-bottom: 1px solid var(--border-header-color);
-    max-width: 1600px;
 }
 
 .main-nav {
@@ -303,8 +301,6 @@ body {
 /* -------------------------TEAM-------------------------- */
 
 .team {
-    max-width: 1600px;
-    margin: 0 auto;
     text-align: center;
     background-color: var(--background-first);
 }
@@ -344,8 +340,9 @@ body {
 
 .team-social-item {
     display: flex;
+    justify-content: center;
     margin-top: 16px;
-    padding: 0 32px;
+    padding: 0;
 }
 
 .team-social-list {
@@ -418,8 +415,6 @@ body {
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    max-width: 1600px;
-    margin: 0 auto;
     background: var(--background);
 }
 
